@@ -21,7 +21,7 @@ const config = {
     corsOptions,
     database: {
         host: 'localhost',
-        user: 'user',
+        user: 'root',
         password: 'root',
         database: 'inventory',
     }
