@@ -17,5 +17,13 @@ export interface Item {
     name: string;
     description?: string;
     photo?: string;
-    created_at: Date;
+    created_at: string;
+}
+
+export type ItemMutation = {
+    category_id: number;
+    location_id: number;
+    name: string;
+    description?: string;
+    photo?: string;
 }
