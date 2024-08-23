@@ -4,10 +4,20 @@ export interface Category {
     description?: string;
 }
 
+export type CategoryMutation = {
+    name: string;
+    description: string;
+}
+
 export interface Location {
     id: number;
     name: string;
     description?: string;
+}
+
+export type LocationMutation = {
+    name: string;
+    description: string;
 }
 
 export interface Item {
