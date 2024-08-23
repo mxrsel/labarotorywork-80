@@ -2,6 +2,7 @@ import express from "express";
 import mysqlDb from "./mysqlDb";
 import config from "./config";
 import cors, {CorsOptions} from "cors";
+import categoriesRouter from "./routers/categories";
 
 const app = express();
 const port = 8000;

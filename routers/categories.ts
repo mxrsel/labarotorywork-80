@@ -27,3 +27,5 @@ categoriesRouter.get('/:id', async (req, res) => {
     return res.send(categories[0]);
 });
 
+
+export default categoriesRouter
