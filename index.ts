@@ -1,8 +1,9 @@
 import express from "express";
 import mysqlDb from "./mysqlDb";
 import config from "./config";
-import cors, {CorsOptions} from "cors";
+import cors from "cors";
 import categoriesRouter from "./routers/categories";
+import locationsRouter from "./routers/locations";
 
 const app = express();
 const port = 8000;
@@ -11,6 +12,7 @@ app.use(cors(config.corsOptions))
 app.use(express.json());
 app.use (express.static('public'));
 app.use ('/categories', categoriesRouter);
+app.use ('/locations', locationsRouter)
 
 
 const run = async () => {
